@@ -1,0 +1,103 @@
+
+  *{
+  box-sizing: border-box;
+  }
+
+body {
+    background-image: url("art-2681039_1920.jpg");
+    background-repeat:no-repeat;
+    background-size: cover;  
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+}
+
+/* Style the header*/
+header[role = "banner"]{ /*attribute selector*/
+    font-family: 'Bowlby One SC';
+  background-color: rgba(10, 1, 1, 0.733);
+  padding: 40px;
+  text-align: center;
+  font-size: 45px;
+  margin: 5px;
+}
+
+ body h2{ /*descendant selector */
+    font-family: 'Dancing Script', cursive;
+    background-color:rgba(167, 87, 241, 0.466);
+    padding: 15px;
+    text-align: center;
+    font-size: 35px;
+    margin: 2px;
+  }
+
+.summary{ /*class selector*/
+    color: white;
+    text-align: center;
+    font-family: 'Dancing Script';
+    font-size: 30px;
+}
+h3{ /*type selector*/
+    font-family: 'Dancing Script', cursive;
+    font-size: 32px; 
+}
+
+/* three equal columns that floats next to each other */
+.column{ /*class selector*/
+ background-color: rgba(23, 7, 26, 0.637);
+  float: left;
+  width: 32.9%;
+  padding: 20px;
+  height: 520px;
+  font-size: 18px;
+  margin: 3px;
+ } 
+   
+ .benefits, .requirements{ /* class selector */
+    background-color: rgba(23, 7, 26, 0.637);
+    width: 95%;
+    padding: 10px;
+    height: 420px;
+    margin: 30px;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+   }  
+   
+   .benefits{/* class selector */
+    height: 200px;  
+   }
+  
+/* Clear floats after the columns */
+  #row:after { /* id selector */
+  content: "";
+  display: table;
+  clear: both;
+} 
+
+
+/* Style the footer */
+body > footer{ /*child combinator */
+  padding: 10px;
+  text-align: center;
+  margin: 5px;
+  font-size: 20px;
+} 
+
+.design-selection, .design-archives,.zen-resources{ /*class selector*/
+    color: rgb(255, 255, 255);
+    background-color: rgba(30, 9, 39, 0.644);
+    float: left;
+    width: 32.33%;
+    padding: 10px;
+    height: 300px;
+    margin: 5px;
+} 
+
+nav::first-letter{  /* pseudo element selector*/
+   font-size: 23px;
+}
+
+a:link{ /* pseudo class selector  */
+color:white;
+}
+
